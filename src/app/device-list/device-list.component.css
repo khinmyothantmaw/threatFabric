@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+}
+
+table.mat-table th {
+  background-color: #6d7f85;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+table.mat-table  .mat-sort-header-arrow{
+  color: #fff !important;
+  background: #fff !important;
+}
+.mat-sort-header-pointer-left, .mat--sort-header-pointer-right {
+  background:#fff !important;
+}
+th.mat-sort-header-sorted {
+  color: black;
+}
