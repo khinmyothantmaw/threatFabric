@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 // import {TableSortingExample} from './app/table-sorting-example';
 import {DeviceList} from '../app/device-list/device-list.component';
 import {DeviceDetail} from '../app/device-detail/device-detail.component';
+import { Dashboard } from './dashboard/dashboard.component';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -32,10 +33,12 @@ import {DeviceDetail} from '../app/device-detail/device-detail.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: DeviceList },
-      { path: 'devices/:deviceid', component: DeviceDetail}
+      { path: 'devices/:deviceid', component: DeviceDetail},
+      { path: 'dashboard', component: Dashboard}
+
     ])
   ],
-  declarations: [AppComponent,DeviceList, DeviceDetail],
+  declarations: [AppComponent,DeviceList, DeviceDetail, Dashboard],
   bootstrap: [AppComponent],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
