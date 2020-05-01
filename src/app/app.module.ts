@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
 // import {TableSortingExample} from './app/table-sorting-example';
 import {DeviceList} from '../app/device-list/device-list.component';
 import {DeviceDetail} from '../app/device-detail/device-detail.component';
-import { Dashboard } from './dashboard/dashboard.component';
+import {Dashboard} from '../app/dashboard/dashboard.component';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
